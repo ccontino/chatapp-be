@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: chatapp
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/sse_demo?sslMode=DISABLED
+    username: root
+    password: password
+  sql:
+    init:
+      mode: always # se vuoi inizializzare con schema.sql/data.sql
+
+    datasource:
+      initialization-mode: never # disattiva init JDBC se usi solo R2DBC
+
+logging:
+  level:
+    io.r2dbc.pool: DEBUG
+    dev.miku.r2dbc.mysql: DEBUG
