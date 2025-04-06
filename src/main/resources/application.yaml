@@ -2,7 +2,7 @@ spring:
   application:
     name: chatapp
   r2dbc:
-    url: r2dbc:mysql://localhost:3306/sse_demo?sslMode=DISABLED
+    url: r2dbc:mariadb://localhost:3306/sse_demo?sslMode=DISABLED
     username: root
     password: password
   sql:
