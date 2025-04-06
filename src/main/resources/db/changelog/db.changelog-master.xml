@@ -5,5 +5,8 @@
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
 
     <include file="001-create-chat-message.xml" relativeToChangelogFile="true"/>
+    <!--
     <include file="002-alter-chat-message.xml" relativeToChangelogFile="true"/>
+    <include file="003-alter-chat-message.xml" relativeToChangelogFile="true"/>
+    -->
 </databaseChangeLog>

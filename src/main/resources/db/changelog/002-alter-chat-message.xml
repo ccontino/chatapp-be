@@ -1,14 +1,14 @@
 <databaseChangeLog
-    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <changeSet id="002-alter-chat-message" author="ccontino">
-        <dropColumn tableName="chat_message" columnName="created_at"/>
+    <changeSet id="003-alter-chat-message-id" author="ccontino">
+        <dropColumn tableName="chat_message" columnName="id"/>
         <addColumn tableName="chat_message">
-            <column name="created_at" type="timestamp" defaultValueComputed="CURRENT_TIMESTAMP">
-                <constraints nullable="false"/>
+            <column name="id" type="INT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" primaryKeyName="pk_chat_message"/>
             </column>
         </addColumn>
     </changeSet>

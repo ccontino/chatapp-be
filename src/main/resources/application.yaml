@@ -1,11 +1,6 @@
 spring:
   application:
     name: chatapp
-  datasource:
-    url: jdbc:mariadb://localhost:3306/sse_demo?sslMode=DISABLED
-    username: root
-    password: password
-    driver-class-name: org.mariadb.jdbc.Driver
   r2dbc:
     url: r2dbc:mariadb://localhost:3306/sse_demo?sslMode=DISABLED
     username: root
@@ -17,7 +12,6 @@ spring:
     user: root
     password: password
     liquibase-schema: sse_demo
-
 
 logging:
   level:
