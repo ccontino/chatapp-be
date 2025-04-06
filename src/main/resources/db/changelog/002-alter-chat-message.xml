@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <changeSet id="003-alter-chat-message-id" author="ccontino">
+    <changeSet id="002-alter-chat-message-id" author="ccontino">
         <dropColumn tableName="chat_message" columnName="id"/>
         <addColumn tableName="chat_message">
             <column name="id" type="INT" autoIncrement="true">

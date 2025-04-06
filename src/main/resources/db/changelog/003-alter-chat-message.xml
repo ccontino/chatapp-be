@@ -4,7 +4,7 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <changeSet id="002-alter-chat-message" author="ccontino">
+    <changeSet id="003-alter-chat-message" author="ccontino">
         <dropColumn tableName="chat_message" columnName="created_at"/>
         <addColumn tableName="chat_message">
             <column name="created_at" type="timestamp" defaultValueComputed="CURRENT_TIMESTAMP">
